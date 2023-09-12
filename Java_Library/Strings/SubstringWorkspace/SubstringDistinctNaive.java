@@ -1,6 +1,11 @@
 import java.lang.*;
 import java.util.*;
 
+// Length of the longest substring with distinct characters
+// For “ABDEFGABEF”, the longest substring are “BDEFGA” and "DEFGAB", with length 6.
+// For “BBBB” the longest substring is “B”, with length 1.
+// Time Complexity = O(N^3)
+
 class SubstringDistinctNaive{
 
     public static void main(String args[]){
@@ -17,7 +22,7 @@ class SubstringDistinctNaive{
         for(int start=0;start<sbLength;start++){
             for(int end=0;end<sbLength;end++){
                 
-                //check distinct
+                //check the substring has distinct characters 
                 if(checkDistinct(input,start,end))
 
                 //count the max distinct
