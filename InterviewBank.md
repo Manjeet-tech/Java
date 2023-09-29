@@ -84,3 +84,48 @@ __CascadeType.REFRESH:__ When you refresh the parent entity __(e.g., using sessi
 __CascadeType.DETACH:__ When you detach the parent entity __(e.g., using session.evict() or entityManager.detach())__, the associated child entities will also be detached.
 
 __CascadeType.ALL__ effectively includes all of the above cascade types, so any operation you perform on the parent entity will propagate to its associated child entities.
+
+
+---
+
+### 1. Difference between Nested class and block with example in java?
+
+[Refer Here](https://www.scientecheasy.com/2020/06/instance-block-in-java.html/)
+
+[Refere Here](https://www.programiz.com/java-programming/nested-inner-class)
+
+
+__Inner Class__
+```
+class CPU {
+    // ...
+    class Processor {
+        // ...
+    }
+
+    class protected RAM{
+        // ...
+    }
+}
+```
+
+```
+CPU.Processor processor = cpu.new Processor;
+CPU.RAM ram = cpu.new RAM();
+```
+
+__Static Nested Class__
+
+```
+class MotherBoard {
+     // static nested class
+   static class USB{
+    //
+   }
+}
+```
+
+```
+MotherBoard.USB usb = new MotherBoard.USB();
+```
+
