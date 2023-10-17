@@ -61,5 +61,7 @@ class PolymerphismCheck{
 
 15. Memory management(heap, stack).
 
+16. Explain resilient in microservice.
+
 
  
